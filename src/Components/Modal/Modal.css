@@ -1,0 +1,129 @@
+.modal-wrapper{
+    position: fixed;
+    width: 98.9vw;
+    height: 100vh;
+    background-color: 	rgba(192, 192, 192, 0.8);
+    margin: -24px 0 0 -26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-hide{
+    display: none;
+}
+
+.modal {
+   position: relative;
+    width: 534px;
+    height: 511px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 26px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+.modal-close{
+    position: absolute;
+    top:18px;
+    right: 18px;
+    cursor: pointer;
+    color:#C1C0C0;
+    font-size: 18px;
+}
+
+
+.modal-content{
+    /* position: relative; */
+    padding: 79px 82px  55px 82px;
+    --content-width: calc(551px - 82*2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+.modal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: var(--content-width);
+}
+
+.modal-circle{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #F05E5E;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-inside{
+    width: 64px;
+    height: 64px;
+    color: #F05E5E;
+}
+
+.modal-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--content-width);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 33px;
+    margin-bottom: 0px;
+    color: #4A4A4A;
+}
+
+.modal-body{
+    width: var(--content-width);
+    min-height: 51px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #6A6A6A;
+    margin-bottom: 69px;
+    margin-top: 38px;
+}
+.button-layout{
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute;
+    bottom: 0; */
+}
+.btn-accept{
+    width: 143px;
+    height: 52px;
+    background: #F05E5E;
+    border-radius: 8px;
+    border: #F05E5E;
+}
+.btn-accept > p {
+    margin: 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.btn-cancel{
+    width: 143px;
+    height: 52px;
+    background: #E4DADA;
+    border-radius: 8px;
+    border: #F05E5E;
+}
+.btn-cancel > p {
+    
+   
+    margin: 0 0;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
